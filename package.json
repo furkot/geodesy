@@ -1,0 +1,31 @@
+{
+  "name": "@furkot/geodesy",
+  "version": "0.0.0",
+  "description": "Small subset of geodesy functionality operating on [lon,lat] points.",
+  "keywords": [
+    "geodesy",
+    "lonlat"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/geodesy.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "type": "module",
+  "exports": "./lib/geodesy.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "test": "make check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.6"
+  }
+}
