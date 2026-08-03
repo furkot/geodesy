@@ -17,7 +17,10 @@
     "url": "https://pirxpilot.me"
   },
   "type": "module",
-  "exports": "./lib/geodesy.js",
+  "exports": {
+    ".": "./lib/spherical.js",
+    "./spherical": "./lib/spherical.js"
+  },
   "files": [
     "index.js",
     "lib"

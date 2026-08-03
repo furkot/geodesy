@@ -15,7 +15,7 @@ $ npm install --save @furkot/geodesy
 ## Usage
 
 ```js
-import { distance, initialBearing, alongTrackDistance, crossTrackDistance, intermediatePoint } from '@furkot/geodesy';
+import { distance, initialBearing, alongTrackDistance, crossTrackDistance, intermediatePoint } from '@furkot/geodesy/spherical';
 
 // Calculate distance between two points
 const p1 = [0.119, 52.205];
@@ -38,6 +38,7 @@ const pInt = intermediatePoint(p1, p2, 0.25); // [ 0.7073, 51.3721 ]
 
 ## API
 
+### spherical
 - `distance(from, to, radius)`: Calculates the distance between two points on the Earth's surface.
 - `initialBearing(from, to)`: Returns the initial bearing from one point to another.
 - `alongTrackDistance(point, start, end, radius)`: Calculates how far a point is along a path from a start point to an end point.

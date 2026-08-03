@@ -1,5 +1,11 @@
 import test from 'node:test';
-import { alongTrackDistance, crossTrackDistance, distance, initialBearing, intermediatePoint } from '../lib/geodesy.js';
+import {
+  alongTrackDistance,
+  crossTrackDistance,
+  distance,
+  initialBearing,
+  intermediatePoint
+} from '../lib/spherical.js';
 
 const R = 6371e3; // approximate Earth radius in metres
 
