@@ -1,6 +1,6 @@
 {
   "name": "@furkot/geodesy",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Small subset of geodesy functionality operating on [lon,lat] points.",
   "keywords": [
     "geodesy",
