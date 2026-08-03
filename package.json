@@ -19,7 +19,8 @@
   "type": "module",
   "exports": {
     ".": "./lib/spherical.js",
-    "./spherical": "./lib/spherical.js"
+    "./spherical": "./lib/spherical.js",
+    "./dms": "./lib/dms.js"
   },
   "files": [
     "index.js",

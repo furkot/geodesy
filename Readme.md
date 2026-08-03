@@ -36,6 +36,24 @@ const dCross = crossTrackDistance(pCurrent, p1, p2); // -307.5 m
 const pInt = intermediatePoint(p1, p2, 0.25); // [ 0.7073, 51.3721 ]
 ```
 
+```js
+import { parse, toDms, toLat, toLon } from '@furkot/geodesy/dms';
+
+// Parse DMS string to decimal degrees
+const lat = parse('51° 28′ 40.37″ N'); // 51.4779
+const lon = parse('000° 00′ 05.29″ W'); // -0.0015
+
+// Convert decimal degrees to DMS string
+const dmsLat = toDms(lat, 'dms'); // 51° 28′ 40.37″
+const dmsLon = toDms(lon, 'dms'); // 000° 00′ 05.29″
+
+// Convert decimal degrees to latitude string
+const latStr = toLat(lat, 'dms'); // 51° 28′ 40.37″ N
+
+// Convert decimal degrees to longitude string
+const lonStr = toLon(lon, 'dms'); // 000° 00′ 05.29″ W
+```
+
 ## API
 
 ### spherical
@@ -44,6 +62,11 @@ const pInt = intermediatePoint(p1, p2, 0.25); // [ 0.7073, 51.3721 ]
 - `alongTrackDistance(point, start, end, radius)`: Calculates how far a point is along a path from a start point to an end point.
 - `crossTrackDistance(point, start, end, radius)`: Returns the distance from a point to a great circle path.
 - `intermediatePoint(start, end, fraction)`: Returns the point at a given fraction between two points.
+
+### dms
+- `parse(dms)`: Parses string representing degrees/minutes/seconds into numeric degrees.
+- `toLat(deg, format, dp)`: Converts numeric degrees to deg/min/sec latitude.
+- `toLon(deg, format, dp)`: Converts numeric degrees to deg/min/sec longitude.
 
 ## [License][LICENSE]
 
